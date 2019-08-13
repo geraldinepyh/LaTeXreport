@@ -52,7 +52,6 @@ def makeReport(logger, exportAsPDF = True):
         packages = jsonConfig["packages"]
         for p in packages: doc.packages.append(Package(p))
         preambles = jsonConfig["preamble"]
-
         # Add Title/Authors
         for pa in preambles:
             doc.preamble.append(Command(pa, preambles[pa]))
@@ -69,9 +68,9 @@ def makeReport(logger, exportAsPDF = True):
         lt.addTable(doc, 3)
         lt.addSections(doc, 3)     
         lt.addTable(doc, 4)
-        lt.addFigure(doc, 1)
 
         # # Add image
+        # lt.addFigure(doc, 1)
         for fig in jsonConfig["figures"]:
             with doc.create(Figure(position='h!')) as fig_:
                 fig_.add_image("Paper1/" + jsonConfig["figures"][fig]["filename"])

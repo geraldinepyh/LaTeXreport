@@ -1,7 +1,7 @@
 from logs import logDecorator as lD
 import jsonref
 import pylatex
-from pylatex import Document, Section, Subsection, Tabular,  Tabularx, MultiColumn, MultiRow, NoEscape
+from pylatex import Document, Section, Subsection, Tabular,  Tabularx, MultiColumn, MultiRow, NoEscape,Figure
 import scipy
 import pickle
 import numpy as np
@@ -117,18 +117,11 @@ def addTable(logger, doc, tblno, wideTable=False):
 def addFigure(logger, doc, figno):
     try:
         jsonConfig = jsonref.load(open('../config/paper1/createLatex.json'))
-        figuresConfig = jsonConfig["figures"]
-        figPath = os.path.join("Paper1",figuresConfig["figure"+str(figno)]["filename"])
-        print(figPath)
-        # with doc.create(Figure(position='h!')) as fig_:
-        #     fig_.add_image(figPath)
-        #     fig_.add_caption(figuresConfig[fig]["caption"])
+        figureConfig = jsonConfig["figures"]["figure"+str(figno)]
+        with doc.create(Figure(position='h!')) as fig_:
+            fig_.add_image(os.path.join("Paper1/"+figureConfig+".png"))
+            fig_.add_caption(figureConfig["caption"])
 
-
-        for fig in jsonConfig["figures"]:
-            with doc.create(Figure(position='h!')) as fig_:
-                fig_.add_image("Paper1/" + jsonConfig["figures"][fig]["filename"])
-                fig_.add_caption(jsonConfig["figures"][fig]["caption"])
         return 
     except Exception as e: 
         logger.error(f'Unable to add the table. \n {e}')
