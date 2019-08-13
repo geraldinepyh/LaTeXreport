@@ -1,0 +1,36 @@
+{
+    "section1" : {
+        "title" : "Introduction",
+        "text" : "Hello world!",
+        "subsections" : {
+            "subsection1" : {
+                "title" : "Study aims",
+                "text" : "This study aims to xxxx."
+            },
+            "subsection2" : {
+                "title" : "",
+                "text" : ""
+            }
+        }
+    },
+    "section2" : {
+        "title" : "Related Studies",
+        "text" : "Other studies that have performed similar analyses...",
+        "subsections" : {
+            "subsection1" : {
+                "title" : "",
+                "text" : ""
+            }
+        }
+    },
+    "section3" : {
+        "title" : "Methodology",
+        "text" : "We did the following:...",
+        "subsections" : {
+            "subsection1" : {
+                "title" : "",
+                "text" : ""
+            }
+        }
+    }
+}   

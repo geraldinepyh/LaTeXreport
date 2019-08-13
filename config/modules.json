@@ -1,0 +1,15 @@
+[
+    {
+        "moduleName" : "createLatex",
+        "path"       : "modules/paper1/createLatex.py",
+        "execute"    : true,
+        "description": "Generates a PDF for the plots in the Comorbid paper.",
+        "owner"      : ""
+    }, {
+        "moduleName" : "celeryCheck",
+        "path"       : "modules/celeryCheck/celeryCheck.py",
+        "execute"    : false,
+        "description": "",
+        "owner"      : ""
+    }
+]

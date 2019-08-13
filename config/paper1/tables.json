@@ -1,0 +1,33 @@
+{
+    "filepath" : "../data/final/",
+    "table2" : {
+        "caption" : "This table describes the DSM-IV Substance Use Disorder diagnoses of patients aged 12 or older, by age group.",
+        "files" :  {
+            "AA" : "out20",
+            "NH/PI" : "out21",
+            "MR" : "out22"
+        },
+        "row_index" : "SUD",
+        "column_index" : ["Race","Age Group"]
+    },
+    "table3" : {
+        "caption" : "This table describes the DSM-IV Substance Use Disorder diagnoses of patients aged 12 or older, by age group.",
+        "files" :  {
+            "AA" : "out30",
+            "NH/PI" : "out31",
+            "MR" : "out32"
+        },
+        "row_index" : "SUD",
+        "column_index" : ["Race","Age Group"]
+    },
+    "table4" : {
+        "caption" : "This table describes the DSM-IV Substance Use Disorder diagnoses of patients aged 12 or older, by age group.",
+        "files" :  {
+            "AA" : "out40",
+            "NH/PI" : "out41",
+            "MR" : "out42"
+        },
+        "row_index" : "SUD",
+        "column_index" : ["Race","Age Group"]
+    }
+}

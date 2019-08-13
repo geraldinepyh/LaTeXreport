@@ -1,0 +1,22 @@
+modules.paper1 package
+======================
+
+Submodules
+----------
+
+modules.paper1.createLatex module
+---------------------------------
+
+.. automodule:: modules.paper1.createLatex
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: modules.paper1
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,22 @@
+lib.LaTeXreport package
+=======================
+
+Submodules
+----------
+
+lib.LaTeXreport.createLatex module
+----------------------------------
+
+.. automodule:: lib.LaTeXreport.createLatex
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: lib.LaTeXreport
+   :members:
+   :undoc-members:
+   :show-inheritance:

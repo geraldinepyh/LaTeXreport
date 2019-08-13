@@ -1,0 +1,7 @@
+LaTeXreport module
+==================
+
+.. automodule:: LaTeXreport
+   :members:
+   :undoc-members:
+   :show-inheritance:
